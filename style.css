@@ -1,0 +1,109 @@
+:root {
+  --sunny-color: #f9e571; /* Yellow for sunny weather */
+  --cloudy-color: #B0C4DE; /* Light steel blue for cloudy weather */
+  --rainy-color: #4682B4; /* Steel blue for rainy weather */
+  --snowy-color: #FFFFFF; /* White for snowy weather */
+  --storm-color: #8B0000; /* Dark red for thunderstorm */
+  --foggy-color: #BEBEBE; /* Foggy gray */
+  --dusty-color: #D2B48C; /* Tan for dusty weather */
+  --windy-color: #A9A9A9; /* Windy gray */
+  --tornado-color: #800000; /* Dark red for tornado */
+  --background-color: #f0f8ff; /* Light blue background */
+  --button-color: #007bff; /* Blue button */
+  --hover-color: #0056b3; /* Darker blue on hover */
+  --text-color: #333; /* Dark text color */
+  --card-background: #ffffff; /* White background for results */
+  --box-shadow-light: rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: var(--background-color);
+}
+
+h1 {
+  color: var(--text-color);
+  margin: 20px;
+  font-size: 2rem;
+}
+
+input, button {
+  padding: 12px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%; 
+  max-width: 350px;
+  font-size: 16px; 
+  box-shadow: 0 2px 4px var(--box-shadow-light);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  font-size: 14px;
+  width: auto;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 4px 8px var(--box-shadow-hover);
+}
+
+input:focus, button:focus {
+  outline: 2px solid var(--hover-color);
+  outline-offset: 2px;
+}
+
+input:hover {
+  border-color: var(--button-color);
+  box-shadow: 0 4px 8px var(--box-shadow-hover);
+}
+
+#result {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  background-color: var(--card-background);
+  box-shadow: 0 4px 10px var(--box-shadow-light);
+  border-radius: 10px;
+  transition: background-color 0.5s ease, box-shadow 0.3s ease, transform 0.3s;
+}
+
+#result:hover {
+  box-shadow: 0 8px 20px var(--box-shadow-hover);
+  transform: scale(1.02); 
+}
+
+#weather-icon {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  border-radius: 50%; 
+  background: #fff; 
+  box-shadow: 0 2px 6px var(--box-shadow-light);
+  padding: 10px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#weather-icon:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 12px var(--box-shadow-hover);
+}
+
+#weather-info {
+  color: var(--text-color);
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+}
