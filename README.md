@@ -1,7 +1,7 @@
 # Weather-Dashboard
   => This is a simple, clean weather dashboard that fetches real-time weather data using the OpenWeather API.
   It displays the weather for any city, town, or village in India with a responsive and user-friendly interface.
-
+  
  The project contains three main files and a folder for assets:
     1. index.html
           a) Contains the structure of the webpage.
